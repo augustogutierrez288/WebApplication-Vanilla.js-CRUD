@@ -1,0 +1,17 @@
+{
+  "name": "webapplication-vanillajs-crud",
+  "version": "1.0.0",
+  "description": "Web application developed with javascript. Final project programming II UTN-FRT.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",  
+    "build-css": "node-sass --include-path scss scss/style.scss css/style.css",
+    "dev-scss": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "author": "Augusto Gutierrez",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^9.0.0",
+    "nodemon": "^3.0.1"
+  }
+}
