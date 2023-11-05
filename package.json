@@ -4,7 +4,7 @@
   "description": "Web application developed with javascript. Final project programming II UTN-FRT.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",  
+    "test": "echo \"Error: no test specified\" && exit 1",
     "build-css": "node-sass --include-path scss scss/style.scss css/style.css",
     "dev-scss": "nodemon -e scss -x \"npm run build-css\""
   },

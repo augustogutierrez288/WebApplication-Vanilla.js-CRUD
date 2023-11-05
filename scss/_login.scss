@@ -1,111 +1,105 @@
-.body-login-header{
-    width: 100%;
-    height: 100%;
+.box-logo{
+    width: 120px;
+    height: 62px;
+    background-color: map-get($colors, ruko-purple );
+    border-radius: 2px;
+    .logo{
+        width: 110px;
+    }
 }
-
-.container-login {
+.box-login{
     position: relative;
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 400px;
+    background-color: transparent;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    .box-login{
-        position: relative;
-        max-width: 400px;
-        background-color: #343a40;
-        border: 2px solid #343a40;
-        border-radius: 20px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 2rem 3rem;
-        z-index: 1;
-        .login{
-            h1 {
-                font-size: 2rem;
-                color: #fff;
-                text-align: center;
+    padding: 2rem 3rem;
+    .login{
+        h1 {
+            font-size: $font-size-title;
+            text-align: center;
+        }
+        .inputbox {
+            position: relative;
+            margin: 30px 0;
+            max-width: 310px;
+            border-bottom: 2px solid map-get($colors, ruko-purple);
+            label {
+                position: absolute;
+                top: 50%;
+                left: 5px;
+                transform: translateY(-50%);
+                color: map-get($colors, ruko-purple);
+                font-size: $font-size-text;
+                pointer-events: none;
+                transition: all 0.5s ease-in-out;
             }
-            .inputbox {
-                position: relative;
-                margin: 30px 0;
-                max-width: 310px;
-                border-bottom: 2px solid #fff;
-                label {
-                    position: absolute;
-                    top: 50%;
-                    left: 5px;
-                    transform: translateY(-50%);
-                    color: #fff;
-                    font-size: 1rem;
-                    pointer-events: none;
-                    transition: all 0.5s ease-in-out;
-                }
-                input {
-                    width: 100%;
-                    height: 60px;
-                    background: transparent;
-                    border: none;
-                    outline: none;
-                    font-size: 1rem;
-                    padding: 0 35px 0 5px;
-                    color: #fff;
-                }
-                ion-icon {
-                    position: absolute;
-                    right: 8px;
-                    color: #fff;
-                    font-size: 1.2rem;
-                    top: 20px;
-                }
-    
-                input:focus ~ label, 
-                input:valid ~ label {
-                    top: -5px;
-                }
-            }
-            
-            button {
+            input {
                 width: 100%;
-                height: 40px;
-                border-radius: 40px;
-                background-color: #fff;
+                height: 60px;
+                background: transparent;
                 border: none;
                 outline: none;
-                cursor: pointer;
-                color: #343a40;
                 font-size: 1rem;
-                font-weight: 600;
-                transition: all 0.4s ease;
-                &:hover{
-                    background-color: transparent;
-                    color: #fff;
-                    border: 2px solid #fff;
-                }
+                padding: 0 35px 0 5px;
+                color: map-get($colors, ruko-purple );
             }
-            
-            .register {
-                font-size: 0.9rem;
-                color: #ffffff;
-                text-align: center;
-                margin: 25px 0 10px;
-                p{
-                    a{
-                        text-decoration: none;
-                        color: #ffffff;
-                        font-weight: 600;
-                        &:hover{
-                            text-decoration: underline;
-                        }
+            ion-icon {
+                position: absolute;
+                right: 8px;
+                color: map-get($colors, ruko-purple);
+                font-size: $font-size-icon;
+                top: 20px;
+            }
+
+            input:focus ~ label, 
+            input:valid ~ label {
+                top: -5px;
+            }
+        }
+        
+        button {
+            width: 100%;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 40px;
+            background-color: map-get($colors, ruko-purple );
+            border: none;
+            outline: none;
+            cursor: pointer;
+            color: map-get($colors, light);
+            font-size: $font-size-text;
+            font-weight: 600;
+            transition: all 0.4s ease;
+            &:hover{
+                background-color: transparent;
+                color: map-get($colors, ruko-purple );
+                border: 2px solid map-get($colors, ruko-purple );
+            }
+        }
+        
+        .register {
+            font-size: $font-size-text - .1rem;
+            color: map-get($colors, ruko-purple );
+            text-align: center;
+            margin: 25px 0 10px;
+            p{
+                a{
+                    text-decoration: none;
+                    color: map-get($colors, ruko-purple);
+                    font-weight: 600;
+                    &:hover{
+                        text-decoration: underline;
                     }
                 }
             }
         }
     }
-    
 }
   
-  
+.container-dots-flow{
+    position: relative;
+}
   
   
