@@ -1,7 +1,12 @@
 const btnRegister = document.getElementById("btn-register");
 const inputCreateUser = document.getElementById("input-create-user");
 const inputCreatePassword = document.getElementById("input-create-password");
-const arrayUsers = [];
+const boxLoading = document.getElementById("box-loading-r");
+let arrayUsers = [];
+
+if(localStorage.getItem("users")){
+  arrayUsers = JSON.parse(localStorage.getItem("users"));
+}
 
 function notify(message, color) {
   Toastify({
@@ -27,8 +32,8 @@ function validateUser(user) {
   return user.username !== "" && user.password !== "";
 }
 
-function saveUsers() {
-  localStorage.setItem("users", JSON.stringify(arrayUsers));
+function saveUsers(array) {
+  localStorage.setItem("users", JSON.stringify(array));
 }
 
 btnRegister.addEventListener("click", () => {
@@ -46,8 +51,12 @@ btnRegister.addEventListener("click", () => {
     notify("El usuario ya existe", "#FF033E");
   } else {
     arrayUsers.push(user);
-    saveUsers();
+    saveUsers(arrayUsers);
     notify("Usuario creado con éxito", "#662d91");
+    notify("Redireccionando...", "#662d91");
+    setTimeout(()=>{
+      document.location.href = "https://augustogutierrez288.github.io/WebApplication-Vanilla.js-CRUD/index.html";
+    },3000)
 
     inputCreateUser.value = "";
     inputCreatePassword.value = "";

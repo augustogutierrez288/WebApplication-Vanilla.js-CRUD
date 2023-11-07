@@ -91,6 +91,73 @@ body {
 .container-dots-flow {
   position: relative; }
 
+.box .sidebar {
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  width: 72px;
+  height: 100%;
+  background: #6d10db;
+  transition: width 0.4s; }
+  .box .sidebar .sidebar-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px; }
+    .box .sidebar .sidebar-inner .sidebar-header {
+      display: flex;
+      align-items: center;
+      height: 72px;
+      padding: 0 1.25rem 0 0;
+      background: rgba(0, 0, 0, 0.1); }
+      .box .sidebar .sidebar-inner .sidebar-header .sidebar-burger {
+        width: 72px;
+        height: 72px;
+        display: grid;
+        place-items: center;
+        background-image: url(../assets/img/sidebar/icon-burger.svg);
+        background-position: center;
+        background-repeat: no-repeat; }
+      .box .sidebar .sidebar-inner .sidebar-header .sidebar-logo {
+        height: 50px; }
+    .box .sidebar .sidebar-inner .sidebar-menu {
+      display: grid; }
+      .box .sidebar .sidebar-inner .sidebar-menu button {
+        display: flex;
+        gap: 25px;
+        align-items: center;
+        height: 60px;
+        font-family: "Poppins", sans-serif;
+        font-size: 16px;
+        font-weight: 300;
+        letter-spacing: 2px;
+        line-height: 1;
+        padding: 0 25px; }
+        .box .sidebar .sidebar-inner .sidebar-menu button img {
+          width: 24px;
+          height: 24px; }
+        .box .sidebar .sidebar-inner .sidebar-menu button span {
+          color: #f9f9f9; }
+      .box .sidebar .sidebar-inner .sidebar-menu .has-border {
+        padding-bottom: 1rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+        margin-bottom: 1rem; }
+
+.box button {
+  background: transparent;
+  border: 0;
+  padding: 0;
+  cursor: pointer; }
+
+.box.open .sidebar {
+  width: 260px; }
+
+.box.open .sidebar-burger {
+  background-image: url(../assets/img/sidebar/icon-close.svg);
+  background-position: center;
+  background-repeat: no-repeat; }
+
 /**
   * Dots flow
   *

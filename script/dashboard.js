@@ -3,11 +3,38 @@ const surnameUser = document.getElementById("input-surname");
 const commission = document.getElementById("commission");
 const addStudent = document.getElementById("btn-add-student");
 const studentTable = document.getElementById("student-table");
+const boxSidebar = document.getElementById("box-sidebar");
+const btnSidebarToggle = document.getElementById("btn-sidebars-toggle");
 let formStudent;
 let btnModifyForm;
 let clickCount = 0;
 let ID = 0;
 let arrayStudent = [];
+
+
+btnSidebarToggle.addEventListener("click", () => {
+    boxSidebar.classList.toggle("open");
+})
+
+
+function notify(message, color) {
+    Toastify({
+      text: message,
+      duration: 3000,
+      newWindow: true,
+      close: false,
+      gravity: "bottom",
+      position: "center",
+      stopOnFocus: true,
+      style: {
+        background: color,
+        borderRadius: "10px",
+      },
+    }).showToast();
+}
+document.addEventListener("DOMContentLoaded", () => {
+    notify("Bienvenido", "#662d91");
+});
 
 function paintElement(array){
     studentTable.innerHTML = "";

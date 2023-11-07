@@ -13,32 +13,52 @@
 </head>
 <body class="container-fluid">
     <section class="row">
-        <header class="col-12 header-navbar d-flex align-items-center">
-            <nav class="navbar bg-transparent w-100 h-100">
-                <div class="container-fluid d-flex justify-content-between">
-                  <img src="../assets/img/logo-utn-frt.png" alt="logo-utn-frt" style="width: 70px;">
-                  
-                  <div class="d-flex justify-content-between align-items-center" style="width: 270px;">
-                    <div class="d-flex justify-content-between align-items-cente">
-                        <img class="me-2" src="../assets/img/icon-user.svg" alt="icon-user" >
-                        <p class="m-0 p-0" id="username-user">Augustoguti</p> 
-                    </div>
-                  </div>
-                  
-                </div>
-              </nav>
-        </header>
-        <aside class="col-4">
-            <ul>
-                <li><button type="button">Alumno</button></li>
-                <li><button type="button">Profesor</button></li>
-                <li><button type="button">Nota</button></li>
-                <li><button type="button">Configuracion</button></li>
-                <li><button type="button">Cerrar Sesion</button></li>
-            </ul>
+        <header class="col-2 m-0 box" id="box-sidebar">
 
-        </aside>
-        <main class="col-8">
+            <nav class="sidebar">
+
+                <div class="sidebar-inner">
+
+                  <header class="sidebar-header">
+                    <button
+                      type="button"
+                      class="sidebar-burger"
+                      id="btn-sidebars-toggle"
+                    ></button>
+                    <img src="../assets/img/logo-utn-frt.png" class="sidebar-logo" />
+                  </header>
+
+                  <nav class="sidebar-menu">
+                    <button type="button">
+                      <img src="../assets/img/sidebar/students-icon.png" />
+                      <span>Alumnos</span>
+                    </button>
+                    <button type="button">
+                      <img src="../assets/img/sidebar/profesores-icon.png" />
+                      <span>Profesores</span>
+                    </button>
+                    <button type="button" class="has-border">
+                      <img src="../assets/img/sidebar/icon-blockchain.svg" />
+                      <span>Notas</span>
+                    </button>
+                    <button type="button">
+                      <img src="../assets/img/sidebar/icon-database.svg" />
+                      <span>Configuracion</span>
+                    </button>
+                    <button type="button">
+                      <img src="../assets/img/sidebar/cerrar-sesion.png" />
+                      <span>Cerrar Sesion</span>
+                    </button>
+                  </nav>
+
+                </div>
+
+            </nav>
+
+        </header>
+
+
+        <main class="col-10">
             <section>
                 <form action="" id="form-student">
                     <input type="text" id="input-name">
