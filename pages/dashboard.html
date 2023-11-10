@@ -13,7 +13,7 @@
 </head>
 <body class="container-fluid">
     <section class="row">
-        <header class="col-2 m-0 box" id="box-sidebar">
+        <header class="col-1 m-0 box" id="box-sidebar">
 
             <nav class="sidebar">
 
@@ -58,16 +58,43 @@
         </header>
 
 
-        <main class="col-10">
-            <section>
-                <form action="" id="form-student">
-                    <input type="text" id="input-name">
-                    <input type="text" id="input-surname">
-                    <input type="text" id="commission">
-                    <button type="button" id="btn-add-student">Agregar</button>
-                </form>
+        <main class="col-11 p-3 d-flex flex-column justify-content-start align-items-start">
+
+            <section class="box-form" id="box-form">
+
+              <h3>Cargar Alumnos a la Base de datos</h3>
+
+              <form class="crud-student" method="post" id="form-student">
+                <div class="inputbox">
+                  <input type="text" name="nameuser" id="input-name" required >
+                  <label for="nameuser">Nombre</label>
+                </div>
+                <div class="inputbox">
+                    <input type="text" name="surname" id="input-surname" required>
+                    <label for="surname">Apellido</label>
+                </div>
+                <select name="careers" class="form-select" aria-label="Default select example" id="careers">
+                  
+                </select>
+                <select name="shifts" class="form-select" aria-label="Default select example" id="shifts" disabled>
+                  <option selected>Turno</option>
+                  <option value="Mañana">Mañana</option>
+                  <option value="Tarde">Tarde</option>
+                  <option value="Noche">Noche</option>
+                </select>
+                <select name="commission" class="form-select" aria-label="Default select example" id="commission" disabled>
+                  <option selected>Comision</option>
+                  <option value="1"></option>
+                  <option value="2"></option>
+                  <option value="3"></option>
+                </select>
+                <button class="register" type="button" id="btn-add-student">Agregar</button>
+              </form>
+
             </section>
-            <section id="student-table"></section>
+            <section class="student-table" id="student-table">
+
+            </section>
         </main>
     </section>
 

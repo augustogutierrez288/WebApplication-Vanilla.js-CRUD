@@ -6,7 +6,7 @@
     left: 0;
     width: 72px;
     height: 100%;
-    background: #6d10db;
+    background: map-get($colors, ruko-purple );
     transition: width 0.4s;
     .sidebar-inner {
       position: absolute;
@@ -50,7 +50,7 @@
             height: 24px;
           }
           span {
-            color: #f9f9f9;
+            color: map-get($colors, light );
           }
         }
         .has-border {

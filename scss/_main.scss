@@ -1,0 +1,114 @@
+main{
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    .box-form{
+        h3{
+            color: map-get($colors, dark );
+            font-size: $font-size-title;
+            font-weight: 600;
+        }
+        .crud-student{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+            .inputbox {
+                position: relative;
+                max-width: 170px;
+                border-bottom: 2px solid map-get($colors, ruko-purple);
+                label {
+                    position: absolute;
+                    top: 50%;
+                    left: 5px;
+                    transform: translateY(-50%);
+                    color: map-get($colors, ruko-purple);
+                    font-size: $font-size-text;
+                    pointer-events: none;
+                    transition: all 0.5s ease-in-out;
+                }
+                input {
+                    width: 100%;
+                    height: 60px;
+                    background: transparent;
+                    border: none;
+                    outline: none;
+                    font-size: 1rem;
+                    padding: 0 35px 0 5px;
+                    color: map-get($colors, ruko-purple );
+                }
+    
+                input:focus ~ label, 
+                input:valid ~ label {
+                    top: -5px;
+                }
+            }
+            .form-select{
+                width: 210px;
+            }
+            button {
+                width: 200px;
+                height: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 40px;
+                background-color: map-get($colors, ruko-purple );
+                border: none;
+                outline: none;
+                cursor: pointer;
+                color: map-get($colors, light);
+                font-size: $font-size-text;
+                font-weight: 600;
+                transition: all 0.4s ease;
+                &:hover{
+                    background-color: transparent;
+                    color: map-get($colors, ruko-purple );
+                    border: 2px solid map-get($colors, ruko-purple );
+                }
+            }
+            .register {
+                width: 140px;
+                font-size: $font-size-text - .1rem;
+                color: map-get($colors, light );
+                text-align: center;
+            }
+            .register.close{
+                display: none !important;
+            }
+        }
+    }
+    .student-table{
+        width: 100%;
+        height: 100vh;
+        margin: 40px 0 0 0;
+        padding: 10px 15px 0 15px;
+        border: 1.2px solid map-get($colors, ruko-purple );
+        border-radius: 15px 15px 0 0;
+        overflow-y: scroll;
+        .student{
+            width: 100%;
+            border: 1px solid;
+            border-radius: 10px;
+            padding: 5px;
+            margin: 5px 0 5px 0;
+            display: inline-block;
+            div{
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                p{
+                    width: 19%;
+                    margin: 0;
+                    font-size: $font-size-text;
+                    font-weight: 500;
+                }
+                button{
+                    margin: 0 10px 0 10px !important;
+                }
+            }
+        }
+    }
+}
