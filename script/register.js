@@ -55,7 +55,7 @@ btnRegister.addEventListener("click", () => {
     notify("Usuario creado con éxito", "#662d91");
     notify("Redireccionando...", "#662d91");
     setTimeout(()=>{
-      document.location.href = "https://augustogutierrez288.github.io/WebApplication-Vanilla.js-CRUD/index.html";
+      document.location.href = "https://augustogutierrez288.github.io/WebApplication-Vanilla.js-CRUD/";
     },3000)
 
     inputCreateUser.value = "";

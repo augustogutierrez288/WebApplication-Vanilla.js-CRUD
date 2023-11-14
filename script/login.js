@@ -59,12 +59,12 @@ btnLogin.addEventListener("click", () => {
     if (userExists(user.username)) {
         loading();
         setTimeout(()=>{
+            localStorage.setItem("isLoggedIn", true)
             btnLogin.innerHTML = "";
             btnLogin.innerHTML = " Acceso concedido";
-            document.location.href = "pages/dashboard.html"
+            document.location.href = "pages/dashboard-student.html"
             username.value = "";
             password.value = "";
-            localStorage.setItem("isLoggedIn", true)
         },4000)
     } else {
         notify("El usuario no existe", "#FF033E");

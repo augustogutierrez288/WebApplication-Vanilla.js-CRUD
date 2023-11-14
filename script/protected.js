@@ -9,7 +9,7 @@ function checkLoggedIn() {
   if (isLoggedIn) {
     return true;
   } else {
-    window.location.href = "https://augustogutierrez288.github.io/WebApplication-Vanilla.js-CRUD/index.html";
+    window.location.href = "https://augustogutierrez288.github.io/WebApplication-Vanilla.js-CRUD/";
     return false;
   }
 }
