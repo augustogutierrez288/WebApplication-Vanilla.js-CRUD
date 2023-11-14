@@ -34,7 +34,7 @@
       }
       .sidebar-menu {
         display: grid;
-        button {
+        a {
           display: flex;
           gap: 25px;
           align-items: center;
@@ -45,6 +45,16 @@
           letter-spacing: 2px;
           line-height: 1;
           padding: 0 25px;
+          text-decoration: none;
+          position: relative;
+          div{
+            width: 2px;
+            height: 30%;
+            background: #fff;
+            border-radius: 10px;
+            position: absolute;
+            left: 15px;
+          }
           img {
             width: 24px;
             height: 24px;
@@ -74,9 +84,9 @@
 }
   
 .box.open .sidebar-burger {
-  background-image: url(../assets/img/sidebar/icon-close.svg);
-  background-position: center;
-  background-repeat: no-repeat;
+  background-image: url(../assets/img/sidebar/icon-close.svg) !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
 }
 
   

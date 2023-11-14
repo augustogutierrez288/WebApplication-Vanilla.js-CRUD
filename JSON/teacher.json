@@ -1,0 +1,149 @@
+[
+  {
+    "nombre": "Ing. Juan Pérez",
+    "apellido": "García",
+    "puesto": "Profesor titular",
+    "matricula": "20230001",
+    "materia": "TUP",
+    "area_de_estudio": "Ingeniería en Informática"
+  },
+  {
+    "nombre": "Ing. María López",
+    "apellido": "González",
+    "puesto": "Profesor adjunto",
+    "matricula": "20230002",
+    "materia": "TUP",
+    "area_de_estudio": "Ingeniería en Sistemas"
+  },
+  {
+    "nombre": "Ing. Pedro Rodríguez",
+    "apellido": "Sánchez",
+    "puesto": "Profesor asociado",
+    "matricula": "20230018",
+    "materia": "TUP",
+    "area_de_estudio": "Ingenieria en Computacion"
+   },
+  {
+    "nombre": "Ing. Ana María García",
+    "apellido": "Martínez",
+    "puesto": "Profesor titular",
+    "matricula": "20230003",
+    "materia": "TUMI",
+    "area_de_estudio": "Ingenieria Mecanica"
+  },
+  {
+    "nombre": " Ing. José Luis Fernández",
+    "apellido": "González",
+    "puesto": "Profesor adjunto",
+    "matricula": "20230004",
+    "materia": "TUMI",
+    "area_de_estudio": "Ingenieria Electronica"
+  },
+  {
+    "nombre": "Ing. Sandra Pérez",
+    "apellido": "Sánchez",
+    "puesto": "Profesor asociado",
+    "matricula": "20230005",
+    "materia": "TUMI",
+    "area_de_estudio": "Ingenieria Electronica"
+  },
+  {
+    "nombre": "Licenciado Carlos López",
+    "apellido": "García",
+    "puesto": "Profesor titular",
+    "matricula": "20230206",
+    "materia": "TUHS",
+    "area_de_estudio": "Licenciado en Higiene y Seguridad Laboral"
+  },
+  {
+    "nombre": "Dra. Laura Fernández",
+    "apellido": "Martínez",
+    "puesto": "Profesor adjunto",
+    "matricula": "20230207",
+    "materia": "TUHS",
+    "area_de_estudio": "Abogada"
+  },
+  {
+    "nombre": "Ing. José González",
+    "apellido": "Sánchez",
+    "puesto": "Profesor asociado",
+    "matricula": "20230308",
+    "materia": "TUHS",
+    "area_de_estudio": "Ingenieria Mecanica"
+  },
+  {
+    "nombre": "Martín Pérez",
+    "apellido": "García",
+    "puesto": "Profesor titular",
+    "matricula": "20230069",
+    "materia": "TUM",
+    "area_de_estudio": "Física"
+  },
+  {
+    "nombre": "Ing Fernanda Fernández",
+    "apellido": "Martínez",
+    "puesto": "Profesor adjunto",
+    "matricula": "20235010",
+    "materia": "TUM",
+    "area_de_estudio": "Ingenieria Electrica"
+  },
+  {
+    "nombre": "Lic. Antonio González",
+    "apellido": "Sánchez",
+    "puesto": "Profesor asociado",
+    "matricula": "20234011",
+    "materia": "TUM",
+    "area_de_estudio": "Profesor de Tec. Educativa"
+  },
+  {
+    "nombre": "Ana Lucía Pérez",
+    "apellido": "García",
+    "puesto": "Profesor titular",
+    "matricula": "20130012",
+    "materia": "TUES",
+    "area_de_estudio": "Geologa"
+  },
+  {
+    "nombre": "Ing. Daniel Fernández",
+    "apellido": "Martínez",
+    "puesto": "Profesor adjunto",
+    "matricula": "20230313",
+    "materia": "TUES",
+    "area_de_estudio": "Literatura en Robotica"
+  },
+  {
+    "nombre": "Sandra González",
+    "apellido": "Sánchez",
+    "puesto": "Profesor adjunto",
+    "matricula": "22430013",
+    "materia": "TUES",
+    "area_de_estudio": "Cientifico de Datos"
+  },
+  {
+    "nombre": "Agostina Juarez",
+    "apellido": "Alvarado",
+    "puesto": "Profesor adjunto",
+    "matricula": "22430013",
+    "materia": "TUL",
+    "area_de_estudio": "Cientifico de Datos"
+  },
+  {
+    "nombre": "Dr. Leonel Marcos",
+    "apellido": "Guzman",
+    "puesto": "Profesor adjunto",
+    "matricula": "22430013",
+    "materia": "TUL",
+    "area_de_estudio": "Abogado"
+  },
+  {
+    "nombre": "Ing. Sofia",
+    "apellido": "Cristaldo",
+    "puesto": "Profesor adjunto",
+    "matricula": "22430013",
+    "materia": "TUL",
+    "area_de_estudio": "Ingenieria Industrial"
+  }
+
+]
+
+  

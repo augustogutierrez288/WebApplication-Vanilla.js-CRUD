@@ -15,6 +15,11 @@ let clickCount = 0;
 let ID = 0;
 let arrayStudent = [];
 
+if(localStorage.getItem("student")){
+    arrayStudent = JSON.parse(localStorage.getItem("student"));
+};
+
+
 function notify(message, color) {
     Toastify({
       text: message,
@@ -89,12 +94,24 @@ function careersLogic(){
    shiftsLogic();
 }
 
+function randomFile() {
+    const numeros = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+    const legajo = [];
+  
+    for (let i = 0; i < 5; i++) {
+      legajo.push(numeros[Math.floor(Math.random() * numeros.length)]);
+    }
+  
+    return legajo.join("");
+}
+  
+
 paintCareers();
 careersLogic();
-
+paintElement(arrayStudent);
 function paintElement(array){
     studentTable.innerHTML = "";
-    console.table(array);
+    localStorage.setItem("student",JSON.stringify(array));
     array.forEach((student) => {
         const ctStudent = document.createElement("div");
         ctStudent.classList.add("student");
@@ -103,11 +120,15 @@ function paintElement(array){
                                 <div id="${student.id}"> 
                                 <p id="name${student.id}"> Nombre: ${student.name} </p>
                                 <p id="surname${student.id}"> Apellido: ${student.surname} </p>
+                                <p id="file${student.id}">Legajo: ${student.file}</p>
                                 <p id="careers-student${student.id}">Carrera: ${student.careers}</p>
                                 <p id="shifts${student.id}">Turno: ${student.shifts}</p>
                                 <p id="commission${student.id}">Comision: ${student.commission}</p>
-                                <button class="btn btn-success" id="modify${student.id}">Modificar</button>
-                                <button class="btn btn-danger" id="delete${student.id}">Eliminar</button>
+                                <div class="container-btn d-flex justify-content-center align-items-center gap-2">
+                                    <button class="btn btn-success" id="modify${student.id}">Modificar</button>
+                                    <button class="btn btn-danger d-flex justify-content-center align-items-center" id="delete${student.id}"><img class="m-0 p-0" src="../assets/img/eliminar.png" alt="eliminar" style= "width: 18px;"></button>
+                                </div>
+
                                 </div>
                                 `
         studentTable.appendChild(ctStudent);     
@@ -159,6 +180,7 @@ function modifyStudent(arrayStudent, studentId) {
                 id: student.id,
                 name: nameUser.value,
                 surname: surnameUser.value,
+                file: student.file,
                 careers: careersSelect.value,
                 shifts: shiftsSelect.value,
                 commission: commissionSelect.value,
@@ -208,11 +230,12 @@ btnSidebarToggle.addEventListener("click", () => {
 })
 
 addStudent.addEventListener("click", () => {
-    
+    const file = randomFile();
     const objectStudent = {
         id: ID,
         name: nameUser.value,
         surname: surnameUser.value,
+        file: file,
         careers: careersSelect.value,
         shifts: shiftsSelect.value,
         commission: commission.value,

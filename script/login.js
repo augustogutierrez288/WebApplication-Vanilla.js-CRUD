@@ -64,6 +64,7 @@ btnLogin.addEventListener("click", () => {
             document.location.href = "pages/dashboard.html"
             username.value = "";
             password.value = "";
+            localStorage.setItem("isLoggedIn", true)
         },4000)
     } else {
         notify("El usuario no existe", "#FF033E");
