@@ -76,6 +76,12 @@
     <script>
         const boxSidebar = document.getElementById("box-sidebar");
         const toggleSidebar = () => boxSidebar.classList.toggle("open");
+
+        const btnOff = document.getElementById("off");
+        
+        btnOff.addEventListener("click", ()=>{
+            localStorage.removeItem("isLoggedIn")
+        })
     </script>
     <script src="../script/protected.js"></script>
 </body>

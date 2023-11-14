@@ -4,6 +4,7 @@ const selectCareers = document.getElementById("careers-teacher");
 const selectTeacher = document.getElementById("teacher-select");
 const selectCommission = document.getElementById("commission-select");
 const boxTableStudentCommission = document.getElementById("table-student-commission");
+const btnOff = document.getElementById("off");
 
 let teacherFilter;
 let studentTUMI;
@@ -300,6 +301,11 @@ selectCommission.addEventListener("change", () =>{
             console.error("No existe la comision y la carrera seleccionada.")
             break;
     }
+})
+
+
+btnOff.addEventListener("click", ()=>{
+    localStorage.removeItem("isLoggedIn")
 })
 
 getTeacher();

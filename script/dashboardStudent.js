@@ -7,6 +7,7 @@ const addStudent = document.getElementById("btn-add-student");
 const studentTable = document.getElementById("student-table");
 const boxSidebar = document.getElementById("box-sidebar");
 const btnSidebarToggle = document.getElementById("btn-sidebars-toggle");
+const btnOff = document.getElementById("off");
 
 let formStudent;
 let btnModifyForm;
@@ -255,4 +256,9 @@ addStudent.addEventListener("click", () => {
     paintElement(arrayStudent);
 
     
+})
+
+
+btnOff.addEventListener("click", ()=>{
+    localStorage.removeItem("isLoggedIn")
 })
