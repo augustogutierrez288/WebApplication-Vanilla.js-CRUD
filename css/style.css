@@ -373,7 +373,8 @@ main {
 
 @media screen and (min-width: 200px) and (max-width: 767px) {
   main {
-    height: 100vh; }
+    height: 100vh;
+    overflow-y: scroll; }
     main .box-form {
       margin: 0 0 0 40px; }
       main .box-form h3 {
@@ -389,7 +390,8 @@ main {
         main .box-form .crud-student button {
           margin-top: 20px; }
     main .student-table {
-      margin: 40px 0 0 0; }
+      margin: 40px 0 0 18px;
+      border-bottom: 0; }
       main .student-table .student div {
         flex-direction: column;
         justify-content: flex-start;

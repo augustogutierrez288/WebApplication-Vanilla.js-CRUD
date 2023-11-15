@@ -1,6 +1,7 @@
 @media screen and (min-width: 200px) and (max-width: 767px){
     main{
         height: 100vh;
+        overflow-y: scroll;
         .box-form{
             margin: 0 0 0 40px;
             h3{
@@ -22,7 +23,8 @@
             }
         }
         .student-table{
-            margin: 40px 0 0 0;
+            margin: 40px 0 0 18px;
+            border-bottom: 0;
             .student{
                 div{
                     flex-direction: column;
